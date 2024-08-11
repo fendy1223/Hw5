@@ -1,0 +1,15 @@
+.page-item .page-link {
+  border-radius: 0px;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-radius: 2px;
+}
+
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+  border-radius: 2px;
+}
+
+.form-check-input:checked {
+  background-color: $success;
+}

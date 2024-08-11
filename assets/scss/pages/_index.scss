@@ -1,0 +1,17 @@
+.dropdown-toggle::after {
+  display: none;
+}
+
+.list-group {
+  width: 320px;
+}
+
+.list-group-item.active {
+  background-color: #ced4da;
+  border-color: #ced4da;
+  color: initial;
+}
+
+.card-assignment {
+  width: calc(100% - 320px);
+}
