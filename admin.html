@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script type="module" crossorigin src="/Hw5/assets/main-00d549ca.js"></script>
+    <link rel="stylesheet" href="/Hw5/assets/main-7cd8da28.css">
+  </head>
+  <body>
+    <div class="d-flex">
+      <aside
+  class="navbar navbar-expand-lg bg-body-tertiary vh-100 align-items-start aside position-fixed top-0"
+>
+  <div class="container-fluid flex-column align-items-start px-0 h-100">
+    <div class="w-100">
+      <a class="navbar-brand mb-8 ps-8" href="#"
+        ><img src="/Hw5/assets/logo-ANSWER-5336fb45.svg" alt="logo-ANSWER"
+      /></a>
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item ps mb-4">
+          <a class="nav-link fw-bold" href="#">
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              analytics
+            </span>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class="nav-link fw-bold" href="#">
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              question_answer </span
+            >Question
+          </a>
+        </li>
+        <li class="nav-item mb-4">
+          <a
+            class="nav-link fw-bold "
+            aria-current="page"
+            href="index.html"
+          >
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              assignment
+            </span>
+            Assignment
+          </a>
+        </li>
+        <li class="nav-item mb-4">
+          <a class="nav-link fw-bold" href="#">
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              video_library
+            </span>
+            Course
+          </a>
+        </li>
+        <li class="nav-item mb-4">
+          <a
+            class="nav-link fw-bold border-start border-4 border-success text-success"
+            href="admin.html"
+          >
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              supervisor_account
+            </span>
+            Admin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="#">
+            <span class="material-symbols-outlined align-bottom pe-3 ps-8">
+              settings
+            </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="flex-shrink-0 ps-8">
+        <img
+          src="/Hw5/assets/andychen-f14fef59.jpeg"
+          alt="andychen"
+          width="48"
+          height="48"
+          class="rounded-circle object-fit-cover"
+        />
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <p class="fw-bold">Andy Chen</p>
+        <a href="mailto:andy0401@mail.com" class="fs-7 email">
+          andy0401@mail.com
+        </a>
+      </div>
+    </div>
+  </div>
+</aside>
+      <main class="content">
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg pt-8 pb-8">
+          <div class="container-fluid">
+            <h1 class="navbar-brand fs-4 fw-bold me-12">Admin</h1>
+            <div class="navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="dropdown">
+                  <button
+                    class="btn dropdown-toggle fw-bold nav-item"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span
+                      class="material-symbols-outlined align-bottom text-success"
+                    >
+                      add
+                    </span>
+                    Add New Admin
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#">Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#"
+                        >Another action</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item fw-bold" href="#">
+                        Something else here
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <a class="icon" href="#">
+              <span class="material-symbols-outlined align-bottom me-4">
+                search
+              </span>
+            </a>
+            <a class="icon" href="#">
+              <span class="material-symbols-outlined align-bottom">
+                notifications_active
+              </span>
+            </a>
+          </div>
+        </nav>
+        <div class="mt-6">
+          <!-- table -->
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">
+                  ID
+                  <span
+                    class="material-symbols-outlined text-success align-bottom"
+                  >
+                    arrow_downward
+                  </span>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#1</th>
+                <td class="text-secondary py-6">Emir Wicks</td>
+                <td class="text-secondary py-6">emir.wicks@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#2</th>
+                <td class="text-secondary py-6">Zaina Goldsmith</td>
+                <td class="text-secondary py-6">zaina.goldsmith@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#3</th>
+                <td class="text-secondary py-6">Mahima Lopez</td>
+                <td class="text-secondary py-6">mahima.lopez@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#4</th>
+                <td class="text-secondary py-6">Pharrell Murray</td>
+                <td class="text-secondary py-6">pharrell.murray@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#5</th>
+                <td class="text-secondary py-6">Annika Mcbride</td>
+                <td class="text-secondary py-6">annika.mcbride@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#6</th>
+                <td class="text-secondary py-6">Fatimah Clark</td>
+                <td class="text-secondary py-6">fatimah.clark@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#7</th>
+                <td class="text-secondary py-6">Klaudia Rhodes</td>
+                <td class="text-secondary py-6">klaudia.rhodes@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#8</th>
+                <td class="text-secondary py-6">Tillie Lucero</td>
+                <td class="text-secondary py-6">tillie.lucero@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#9</th>
+                <td class="text-secondary py-6">Sabrina Stephenson</td>
+                <td class="text-secondary py-6">sabrina.stephenson@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-secondary py-6">#10</th>
+                <td class="text-secondary py-6">Annie Smith</td>
+                <td class="text-secondary py-6">annie.smith@mail.com</td>
+                <td class="text-secondary py-6">Yes</td>
+                <td class="text-end py-6">
+                  <button
+                    type="button"
+                    class="btn icon p-0 me-4"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalView"
+                  >
+                    <span class="material-symbols-outlined"> visibility </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn icon p-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalEdit"
+                  >
+                    <span class="material-symbols-outlined"> edit </span>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- 頁數切換 -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end mt-13">
+              <li class="page-item">
+                <a
+                  class="page-link h-100 rounded-start rounded-2p p-1 d-flex align-items-center"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined"> chevron_left </span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link h-100" href="#">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link h-100" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link h-100" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a
+                  class="page-link h-100 rounded-end rounded-2p p-1 d-flex align-items-center"
+                  href="#"
+                >
+                  <span class="material-symbols-outlined"> chevron_right </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </main>
+    </div>
+    <!-- ModalView -->
+    <div
+      class="modal fade"
+      id="modalView"
+      tabindex="-1"
+      aria-labelledby="modalViewLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body">
+            <!-- 內容 -->
+            <div class="d-flex">
+              <img
+                src="/Hw5/assets/emir-3d7a4b39.jpeg"
+                width="141"
+                height="141"
+                class="object-fit-cover me-4"
+                alt="emir"
+              />
+              <div class="w-100 d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                  <p>#1</p>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <p>Admin</p>
+                <h2 class="fw-bold fs-4">Emir Wicks</h2>
+                <a
+                  class="text-secondary mb-3"
+                  href="mailto:emir.wicks@mail.com"
+                >
+                  emir.wicks@mail.com
+                </a>
+                <!-- collapse -->
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item border-0">
+                    <div class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button collapsed p-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        Verified
+                      </button>
+                    </div>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div class="accordion-body">
+                        <div class="modal-footer border-0 p-0">
+                          <button
+                            type="button"
+                            class="btn btn-outline-danger px-8 py-2"
+                            data-bs-dismiss="modal"
+                          >
+                            Deactivate
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-success px-8 py-2"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalEdit"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ModalEdit -->
+    <div
+      class="modal fade"
+      id="modalEdit"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalEditLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modalEditLabel">Edit Admin</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Account -->
+            <div class="border-bottom pb-3">
+              <h2 class="fs-5 fw-bold mb-3">Account</h2>
+              <div class="mb-3">
+                <label for="Name" class="form-label fs-7">Name</label>
+                <input
+                  type="text"
+                  class="form-control p-3 border-0 rounded-0"
+                  id="Name"
+                  value="Emir Wicks"
+                  disabled
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Email" class="form-label fs-7">Email</label>
+                <input
+                  class="form-control p-3 border-0 rounded-0"
+                  id="Email"
+                  type="email"
+                  value="emir.wicks@mail.com"
+                  disabled
+                  readonly
+                />
+              </div>
+            </div>
+            <!-- Verification -->
+            <div class="border-bottom py-4">
+              <h2 class="fs-5 fw-bold mb-3">Verification</h2>
+              <div class="d-flex justify-content-between mb-7">
+                <div class="d-flex">
+                  <span class="material-symbols-outlined text-success me-2">
+                    check_circle
+                  </span>
+                  <p class="fw-bold">Verified</p>
+                </div>
+                <p class="fs-7">2020/4/12</p>
+              </div>
+              <button
+                class="btn btn-light border w-100 py-3"
+                type="button"
+                disabled
+              >
+                Send Verification Mail
+              </button>
+            </div>
+            <!-- Access Level -->
+            <div class="border-bottom py-4">
+              <h2 class="fs-5 fw-bold mb-3">Access Level</h2>
+              <select
+                class="form-select border-dark p-3"
+                aria-label="Default select example"
+              >
+                <option selected disabled>-Choose access level-</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <!-- Custom Access -->
+            <div class="border-bottom py-4">
+              <h2 class="fs-5 fw-bold mb-3">Custom Access</h2>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input border-dark me-3"
+                  type="checkbox"
+                  value=""
+                  id="Lecture"
+                />
+                <label class="form-check-label" for="Lecture"> Lecture </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input border-dark me-3"
+                  type="checkbox"
+                  value=""
+                  id="Coupon"
+                />
+                <label class="form-check-label" for="Coupon"> Coupon </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input border-dark me-3"
+                  type="checkbox"
+                  value=""
+                  id="Message"
+                />
+                <label class="form-check-label" for="Message"> Message </label>
+              </div>
+              <div class="form-check mb-3">
+                <input
+                  class="form-check-input border-dark me-3"
+                  type="checkbox"
+                  value=""
+                  id="Setting"
+                />
+                <label class="form-check-label" for="Setting"> Setting </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input border-dark me-3"
+                  type="checkbox"
+                  value=""
+                  id="Task Menu"
+                />
+                <label class="form-check-label" for="Task Menu">
+                  Task Menu
+                </label>
+              </div>
+            </div>
+            <!-- Deactivate Account -->
+            <div class="py-4">
+              <h2 class="fs-5 fw-bold mb-3">Deactivate Account</h2>
+              <div class="d-flex mb-3">
+                <span class="material-symbols-outlined text-danger me-2">
+                  report_problem
+                </span>
+                <p class="text-danger">This cannot be undone!</p>
+              </div>
+              <button
+                class="btn btn-outline-danger border-danger w-100 py-3"
+                type="button"
+              >
+                Deactivate This Account
+              </button>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-success">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
