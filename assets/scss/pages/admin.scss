@@ -2,6 +2,12 @@
   border-radius: 0px;
 }
 
+.page-link.active,
+.active > .page-link {
+  background-color: $success;
+  border-color: $success;
+}
+
 .accordion-item:first-of-type > .accordion-header .accordion-button {
   border-radius: 2px;
 }
